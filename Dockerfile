@@ -7,8 +7,18 @@ ENV NODE_ENV=production
 ENV HOME=/data
 ENV TZ=Europe/Berlin
 WORKDIR /data
-RUN npm install -g node-red node-red-dashboard node-red-contrib-ccu node-red-contrib-tplink node-red-contrib-aedes \
-                   node-red-node-email node-red-node-openweathermap node-red-contrib-tankerkoenig node-red-contrib-sun-position \
-                   node-red-contrib-wemo-emulator node-red-contrib-jsftpd node-red-contrib-webdav node-red-contrib-persist
+RUN npm install -g node-red@^2.0.0 \
+                   node-red-dashboard@^3.0.0 \
+                   node-red-contrib-ccu@^3.0.0 \
+                   node-red-contrib-tplink@^1.0.0 \
+                   node-red-contrib-aedes@^0.6.0 \
+                   node-red-node-email@^1.0.0 \
+                   node-red-node-openweathermap@^0.5.0 \
+                   node-red-contrib-tankerkoenig@^0.1.0 \
+                   node-red-contrib-sun-position@^2.0.0 \
+                   node-red-contrib-wemo-emulator@^1.0.0 \
+                   node-red-contrib-jsftpd@^1.0.0 \
+                   node-red-contrib-webdav@^1.0.0 \
+                   node-red-contrib-persist@^1.0.0
 
 CMD ["/usr/local/bin/node", "/usr/local/lib/node_modules/node-red/red.js", "-s", "/data/settings.js"]
