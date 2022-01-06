@@ -21,7 +21,7 @@ RUN npm install -g node-red@^2.0.0 \
                    node-red-contrib-webdav@^1.0.0 \
                    node-red-contrib-persist@^1.0.0 \
                    node-red-contrib-circuit@^2.0.0 \
-                   node-red-contrib-https@^1.0.0 \
+                   node-red-contrib-https@^2.0.0 \
                    node-red-contrib-testssl@^1.0.0 \
                    node-red-contrib-twitter-stream@^1.0.0
 
