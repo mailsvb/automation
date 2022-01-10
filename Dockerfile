@@ -23,6 +23,7 @@ RUN npm install -g node-red@^2.0.0 \
                    node-red-contrib-circuit@^2.0.0 \
                    node-red-contrib-https@^2.0.0 \
                    node-red-contrib-testssl@^1.0.0 \
-                   node-red-contrib-twitter-stream@^1.0.0
+                   node-red-contrib-twitter-stream@^1.0.0 \
+                   node-red-contrib-netatmo-dashboard@^0.5.2
 
 CMD ["/usr/local/bin/node", "/usr/local/lib/node_modules/node-red/red.js", "-s", "/data/settings.js"]
