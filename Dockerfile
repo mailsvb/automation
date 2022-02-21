@@ -1,6 +1,6 @@
 FROM node:alpine
 
-RUN apk update && apk upgrade
+RUN apk update && apk upgrade && apk add --update --no-cache bash coreutils procps openssl bind-tools
 RUN mkdir -p /data
 
 ENV NODE_ENV=production
