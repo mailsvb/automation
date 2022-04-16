@@ -7,7 +7,7 @@ ENV NODE_ENV=production
 ENV HOME=/data
 ENV TZ=Europe/Berlin
 WORKDIR /data
-RUN npm install -g node-red@^2.0.0 \
+RUN npm install -g node-red@^2.2.0 \
                    node-red-dashboard@^3.0.0 \
                    node-red-contrib-ccu@^3.0.0 \
                    node-red-contrib-tplink@^1.0.0 \
