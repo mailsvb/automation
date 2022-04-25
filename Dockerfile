@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:16-alpine
 
 RUN apk update && apk upgrade && apk add --update --no-cache bash coreutils procps openssl bind-tools
 RUN mkdir -p /data
