@@ -14,6 +14,7 @@ RUN npm install -g node-red@^2.2.0 \
                    node-red-contrib-aedes@^0.7.0 \
                    node-red-node-email@^1.0.0 \
                    node-red-node-openweathermap@^0.5.0 \
+                   node-red-contrib-aws@^0.7.0 \
                    node-red-contrib-tankerkoenig@^0.1.0 \
                    node-red-contrib-sun-position@^2.0.0 \
                    node-red-contrib-wemo-emulator@^1.0.0 \
