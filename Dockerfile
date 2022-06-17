@@ -11,7 +11,7 @@ RUN npm install -g node-red@^2.2.0 \
                    node-red-dashboard@^3.0.0 \
                    node-red-contrib-ccu@^3.0.0 \
                    node-red-contrib-tplink@^1.0.0 \
-                   node-red-contrib-aedes@^0.7.0 \
+                   node-red-contrib-aedes@^0.8.0 \
                    node-red-node-email@^1.0.0 \
                    node-red-node-openweathermap@^0.5.0 \
                    node-red-contrib-aws@^0.7.0 \
