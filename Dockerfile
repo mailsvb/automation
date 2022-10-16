@@ -1,6 +1,6 @@
 FROM node:16-alpine
 
-RUN apk update && apk upgrade && apk add --update --no-cache bash coreutils procps openssl bind-tools
+RUN apk update && apk upgrade && apk add --update --no-cache bash coreutils procps openssl bind-tools python3 make gcc g++ linux-headers udev
 RUN mkdir -p /data
 
 ENV NODE_ENV=production
@@ -27,6 +27,7 @@ RUN npm install -g node-red@^3.0.0 \
                    node-red-contrib-twitter-stream@^1.0.0 \
                    node-red-contrib-netatmo-dashboard@^0.5.2 \
                    node-red-contrib-kobold@^0.9.0 \
-                   node-red-contrib-ringcentral-api@^1.0.0
+                   node-red-contrib-ringcentral-api@^1.0.0 \
+                   node-red-contrib-modbus@^5.0.0
 
 CMD ["/usr/local/bin/node", "/usr/local/lib/node_modules/node-red/red.js", "-s", "/data/settings.js"]
