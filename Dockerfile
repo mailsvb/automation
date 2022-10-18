@@ -1,13 +1,13 @@
 FROM node:16-alpine
-
-RUN apk update && apk upgrade && apk add --update --no-cache tzdata bash coreutils procps openssl bind-tools python3 make gcc g++ linux-headers udev
-RUN mkdir -p /data
-
 ENV NODE_ENV=production
 ENV HOME=/data
 ENV TZ=Europe/Berlin
+RUN mkdir -p /data
 WORKDIR /data
-RUN npm install -g node-red@^3.0.0 \
+RUN apk update && \
+    apk upgrade && \
+    apk add --update --no-cache tzdata bash coreutils procps openssl bind-tools python3 make gcc g++ linux-headers udev && \
+    npm install -g node-red@^3.0.0 \
                    node-red-dashboard@^3.0.0 \
                    node-red-contrib-ccu@^3.0.0 \
                    node-red-contrib-tplink@^1.0.0 \
@@ -28,6 +28,8 @@ RUN npm install -g node-red@^3.0.0 \
                    node-red-contrib-netatmo-dashboard@^0.5.2 \
                    node-red-contrib-kobold@^0.9.0 \
                    node-red-contrib-ringcentral-api@^1.0.0 \
-                   node-red-contrib-modbus@^5.0.0
+                   node-red-contrib-modbus@^5.0.0 && \
+    apk del make gcc g++ linux-headers && \
+    rm -rf /var/cache/apk/*
 
 CMD ["/usr/local/bin/node", "/usr/local/lib/node_modules/node-red/red.js", "-s", "/data/settings.js"]
