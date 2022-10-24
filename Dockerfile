@@ -28,7 +28,7 @@ RUN apk update && \
                    node-red-contrib-netatmo-dashboard@^0.5.2 \
                    node-red-contrib-kobold@^0.9.0 \
                    node-red-contrib-ringcentral-api@^1.0.0 \
-                   node-red-contrib-modbus@^5.0.0 && \
+                   node-red-contrib-modbus@^5.0.0 \
                    node-red-contrib-sonos-plus@^6.0.0 && \
     apk del make gcc g++ linux-headers && \
     rm -rf /var/cache/apk/*
