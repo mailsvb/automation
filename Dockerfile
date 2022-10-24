@@ -11,7 +11,7 @@ RUN apk update && \
                    node-red-dashboard@^3.0.0 \
                    node-red-contrib-ccu@^3.0.0 \
                    node-red-contrib-tplink@^1.0.0 \
-                   node-red-contrib-aedes@^0.8.0 \
+                   node-red-contrib-aedes@^0.9.0 \
                    node-red-node-email@^1.0.0 \
                    node-red-node-openweathermap@^0.5.0 \
                    node-red-contrib-aws@^0.7.0 \
@@ -29,6 +29,7 @@ RUN apk update && \
                    node-red-contrib-kobold@^0.9.0 \
                    node-red-contrib-ringcentral-api@^1.0.0 \
                    node-red-contrib-modbus@^5.0.0 && \
+                   node-red-contrib-sonos-plus@^6.0.0 && \
     apk del make gcc g++ linux-headers && \
     rm -rf /var/cache/apk/*
 
