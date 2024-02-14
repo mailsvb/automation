@@ -7,7 +7,7 @@ WORKDIR /data
 RUN apk update && \
     apk upgrade && \
     apk add --update --no-cache tzdata bash coreutils procps openssl bind-tools python3 make gcc g++ linux-headers udev && \
-    npm install -g node-red@3.1.3 \
+    npm install -g node-red@3.1.5 \
                    node-red-dashboard@^3.0.0 \
                    node-red-contrib-ccu@^3.0.0 \
                    node-red-contrib-tplink@^1.0.0 \
@@ -31,6 +31,7 @@ RUN apk update && \
                    node-red-node-mongodb@^0.2.5 \
                    passport@^0.7.0 \
                    passport-keycloak-oauth2-oidc@^1.0.0 && \
+                   node-red-contrib-openai@^1.0.0 && \
     apk del make gcc g++ linux-headers && \
     rm -rf /var/cache/apk/*
 
