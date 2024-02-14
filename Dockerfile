@@ -31,7 +31,6 @@ RUN apk update && \
                    node-red-node-mongodb@^0.2.5 \
                    passport@^0.7.0 \
                    passport-keycloak-oauth2-oidc@^1.0.0 && \
-                   node-red-contrib-openai@^1.0.0 && \
     apk del make gcc g++ linux-headers && \
     rm -rf /var/cache/apk/*
 
