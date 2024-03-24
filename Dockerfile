@@ -11,7 +11,7 @@ RUN apk update && \
                    node-red-dashboard@^3.0.0 \
                    node-red-contrib-ccu@^3.0.0 \
                    node-red-contrib-tplink@^1.0.0 \
-                   node-red-contrib-aedes@^0.12.0 \
+                   node-red-contrib-aedes@^0.13.0 \
                    node-red-node-email@^2.0.0 \
                    node-red-node-openweathermap@^0.5.0 \
                    node-red-contrib-aws@^0.7.0 \
