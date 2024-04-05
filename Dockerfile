@@ -7,7 +7,7 @@ WORKDIR /data
 RUN apk update && \
     apk upgrade && \
     apk add --update --no-cache tzdata bash coreutils procps openssl bind-tools python3 make gcc g++ linux-headers udev && \
-    npm install -g node-red@3.1.7 \
+    npm install -g node-red@3.1.8 \
                    node-red-dashboard@^3.0.0 \
                    node-red-contrib-ccu@^3.0.0 \
                    node-red-contrib-tplink@^1.0.0 \
